@@ -1,0 +1,21 @@
+// STYLES: BASE
+@import 'styles/base/reset';
+@import 'styles/base/variables';
+@import 'styles/base/global';
+@import 'styles/base/fonts';
+
+// STYLES: UTILS
+@import 'styles/utils/helpers';
+@import 'styles/utils/mixins';
+
+// LAYOUTS
+@import 'layouts/container';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+// SECTIONS
+@import 'sections/menu/menu';
+// добавить остальные секции
+
+// COMPONENTS
+// Добавить!

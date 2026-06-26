@@ -1,0 +1,13 @@
+{
+  "name": "neurosklad",
+  "version": "1.0.0",
+  "description": "Сайт-визитка Нейросклад - оборудование для склада",
+  "scripts": {
+    "sass": "sass src/index.scss public/css/style.css --style=compressed",
+    "sass:watch": "sass src/index.scss public/css/style.css --watch",
+    "start": "npm run sass:watch"
+  },
+  "devDependencies": {
+    "sass": "^1.101.0"
+  }
+}
