@@ -1,0 +1,11 @@
+html {
+  font-size: $base-font-size; 
+}
+
+body {
+  font-family: $font-family-base;
+  font-weight: $weight-regular;
+  font-size: $text-body-desktop;
+  color: $color-text-primary;
+  background-color: $color-bg-dark;
+}

@@ -1,31 +1,96 @@
-// COLORS
+// ====== CONTAINER =======
+$container-padding-desktop: 140px;
+$container-padding-tablet: 40px;
+$container-padding-mobile: 15px;
+$container-max-width: 1160px;
+
+// ===== COLORS ======
 
 // Фон
 $color-bg-dark: #001A1C;
 $color-bg-green: #005C4D;
-
 // Акцент
 $color-accent: #00C0A5;
 // $color-accent-hover: #007D6C;
 // $color-accent-active: #00584C;
-
 // Текст
 $color-text-primary: #C0BFBF;
-
 // Кнопка
 $color-btn-default:  #00C0A5;
 $color-btn-hover: #007D6C;
 $color-btn-active:#00584C;
 $color-btn-text: #001A1C;
-
 // плашка (дефолтная)
 $color-badge-default: rgba(#C0BFBF, 0.10);
 $color-badge-hover: rgba(#C0BFBF, 0.20);
 $color-badge-active: rgba(#C0BFBF, 0.30);
-
 // плашка (акцентная)
 $color-badge-accent: rgba(#00C0A5, 0.15);
-
 // Окна
 $color-form-bg: #005C4D;
 $color-cookie-bg: rgba(#C0BFBF, 0.40);
+
+// ====== SPACING =====
+// desktop
+$spacing-section-desktop: 7.5rem; // 120px между секциями
+$spacing-heading-desktop: 3.75rem; // 60px между заголовком и контентом
+$spacing-block-desktop: 2.5rem; // 40px между подразделами / крупными блоками
+$spacing-element-desktop: 1.875rem; // 30px между элементами внутри блока
+// tablet
+$spacing-section-tablet: 6.875rem; // 110px между секциями
+$spacing-heading-tablet: 3.125rem; // 50px между заголовком и контентом
+$spacing-block-tablet: 2.5rem; // 40px между подразделами / крупными блоками
+$spacing-subheading-tablet: 1.875rem; // 30px между заголовком подраздела и элементами
+$spacing-element-tablet: 1.25rem; // 20 px между элементами внутри блока
+// mobile
+$spacing-section-mobile: 3.75rem;   // 60px между секциями
+$spacing-heading-mobile: 1.875rem;  // 30px между заголовком и контентом
+$spacing-block-mobile: 1.25rem;   // 20px между подразделами
+$spacing-subheading-mobile: 0.9375rem; // 15px между заголовком подраздела и элементами
+$spacing-element-mobile: 0.625rem;  // 10px между элементами внутри блока
+
+// ====== BREAKPOINTS ========
+$breakpoint-desktop: 1440px;
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 767px;
+
+// ====== TEXT =========
+
+// SIZES
+// desktop
+$base-font-size: 16px;
+$text-hero-desktop: 3.438rem; // 55 px
+$text-xl-desktop: 2.688rem; // 43 px
+$text-lg-desktop: 2.063rem; // 33 px
+$text-md-desktop: 1.875rem; // 30 px
+$text-accent-desktop:  1.438rem; // 23px
+$text-body-desktop: 1.25rem; // 20px
+$text-small-desktop: 1rem; // 16px
+
+// tablet
+$text-hero-tablet: 2.813rem;   // 45px 
+$text-xl-tablet: 1.875rem;   // 30px 
+$text-lg-tablet: 1.563rem;   // 25px 
+$text-md-tablet: 1.438rem;   // 23px
+$text-accent-tablet: 1.25rem; // 20 px
+$text-body-tablet: 1.125rem; // 18 px
+$text-small-tablet: 1rem; // 16px
+$text-xs-tablet: 0.875rem; // 14 px
+
+// mobile
+$text-hero-mobile: 2rem; // 32px 
+$text-xl-mobile: 1.563rem;// 25px 
+$text-lg-mobile: 1.25rem;  // 20px 
+$text-md-mobile: 1.125rem; // 18px
+$text-body-mobile: 1rem; // 16px
+$text-small-mobile: 0.875rem; // 14px
+$text-xs-mobile: 0.75rem; // 12px 
+
+// WEIGHT
+$weight-bold: 700;
+$weight-semibold: 600;
+$weight-regular: 400;
+
+
+// ===== FONTS ======
+$font-family-base: 'Open Sans', sans-serif;
