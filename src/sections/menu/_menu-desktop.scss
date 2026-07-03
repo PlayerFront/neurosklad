@@ -1,0 +1,21 @@
+.menu-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    @include tablet {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        padding-right: 99px;
+    }
+
+    &__link {
+        @include text-16-regular;
+    } // есть ли здесь эффекты при наведении?
+}

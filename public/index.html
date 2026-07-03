@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Нейросклад - оборудование для склада</title>
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Здесь будет сайт нейросклада</h1>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__container">
+            <!-- DESKTOP NAV -->
+            <nav class="menu-desktop">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="Нейросклад" class="header__logo-img">
+                </a>
+                <ul class="menu-desktop__list">
+                    <li class="menu-desktop__item">
+                        <a href="#about" class="menu-desktop__link">О компании</a>
+                    </li>
+                    <li class="menu-desktop__item">
+                        <a href="#equipment" class="menu-desktop__link">Наше оборудование</a>
+                    </li>
+                    <li class="menu-desktop__item">
+                        <a href="#services" class="menu-desktop__link">Наши услуги</a>
+                    </li>
+                    <li class="menu-desktop__item">
+                        <a href="#partners" class="menu-desktop__link">Партнеры</a>
+                    </li>
+                    <li class="menu-desktop__item">
+                        <a href="#cases" class="menu-desktop__link">Кейсы</a>
+                    </li>
+                    <li class="menu-desktop__item">
+                        <a href="#contacts" class="menu-desktop__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- MOBILE NAV -->
+            <nav class="mobile-menu">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="Нейросклад" class="header__logo-img--small">
+                </a>
+
+                <button class="mobile-menu__burger" aria-label="Открыть меню" aria-expanded="false">
+                    <img src="img/icons/burgerIcon.svg" alt="Иконка меню" class="mobile-menu__burger-icon">
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MOBILE PANEL (dropdown overlay) -->
+    <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
+        <div class="mobile-panel__overlay"></div>
+        <nav class="mobile-panel__nav">
+            <button class="mobile-panel__close" aria-label="Закрыть меню">
+                <img src="img/icons/closeIcon.svg" alt="Иконка закрытия" class="mobile-panel__icon">
+            </button>
+            <ul class="mobile-panel__list">
+                <li class="mobile-panel__item">
+                    <a href="#about" class="mobile-panel__link">О компании</a>
+                </li>
+                <li class="mobile-panel__item">
+                    <a href="#equipment" class="mobile-panel__link">Наше оборудование</a>
+                </li>
+                <li class="mobile-panel__item">
+                    <a href="#services" class="mobile-panel__link">Услуги</a>
+                </li>
+                <li class="mobile-panel__item">
+                    <a href="#partners" class="mobile-panel__link">Партнеры</a>
+                </li>
+                <li class="mobile-panel__item">
+                    <a href="#cases" class="mobile-panel__link">Кейсы</a>
+                </li>
+                <li class="mobile-panel__item">
+                    <a href="#contacts" class="mobile-panel__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Система складского оборудования
+                    <span class="hero__title-accent">«Умный склад»</span>
+                    для производственных и логистических компаний
+                </h1>
+                <p class="hero__subtitle">Порядок, рассчитанный до мелочей
+                    <span>
+                        <img src="img/heroRack.svg" alt="Картинка стеллажа в изометрической проекции" class="hero__img">
+                    </span>
+                </p>
+            </div>
+            <a href="#contacts" class="hero__button">Оставить заявку</a>
+        </div>
+    </section>
+
+    <!-- MODAL (ФОРМА ЗАЯВКИ) -->
+    <div class="modal" id="modal-request" aria-hidden="true">
+        <div class="modal__overlay"></div>
+        <div class="modal__window">
+            <h2 class="modal__title">Оставьте заявку и мы обязательно вам перезвоним!</h2>
+            <form class="form" id="request-form">
+                <div class="form__group">
+                    <input type="text" class="form__input" id="name" name="name" placeholder="ФИО" required />
+                </div>
+                <div class="form__group">
+                    <input type="tel" class="form__input" id="phone" name="phone" placeholder="Номер телефона"
+                        required />
+                </div>
+                <div class="form__group">
+                    <input type="email" class="form__input" id="email" name="email" placeholder="Email" required />
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" id="company" name="company"
+                        placeholder="Название компании" />
+                </div>
+                <div class="form__checkbox">
+                    <input type="checkbox" class="form__checkbox-input" id="agreement" name="agreement" required />
+                    <span class="form__checkbox-custom"></span>
+                    <label class="form__checkbox-label" for="agreement">
+                        Согласие на обработку <a href="#"> персональных данных</a>
+                    </label>
+                </div>
+
+                <button class="form__submit" type="submit">Оставить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/modal.js"></script>
 </body>
+
 </html>

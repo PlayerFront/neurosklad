@@ -1,22 +1,23 @@
-// STYLES: BASE
+
 @import 'styles/base/reset';
 @import 'styles/base/variables';
+@import 'styles/utils/mixins';
 @import 'styles/base/global';
 @import 'styles/base/fonts';
-
-// STYLES: UTILS
-@import 'styles/utils/mixins';
 @import 'styles/utils/helpers';
-
-
-// LAYOUTS
 @import 'layouts/container';
 @import 'layouts/header';
 @import 'layouts/footer';
 
 // SECTIONS
-@import 'sections/menu/menu';
+@import 'sections/header/header';
+@import 'sections/menu/menu-desktop';
+@import 'sections/menu/menu-mobile';
+@import 'sections/hero/hero';
+
 // добавить остальные секции
 
 // COMPONENTS
+@import 'components/modal/modal';
+@import 'components/form/form';
 // Добавить!

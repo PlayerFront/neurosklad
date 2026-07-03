@@ -1,0 +1,99 @@
+.mobile-menu {
+    display: none;
+    padding-top: 22px;
+
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__logo-img--small {
+        display: none;
+
+        @include tablet {
+            display: block;
+            width: 124px;
+            height: auto;
+        }
+
+        @include mobile {
+            width: 80px;
+        }
+    }
+
+    &__burger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 110;
+
+        &-icon {
+            display: block;
+        }
+    }
+}
+
+.mobile-panel {
+    position: fixed;
+    inset: 0;
+    z-index: 110;
+    visibility: hidden;
+    pointer-events: none;
+
+    &.active {
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(#001A1C, 0.8);
+        opacity: 0;
+    }
+
+    &__nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 279px;
+        min-height: 280px;
+        background: $color-form-bg;
+        padding: 48px 57px 50px 57px;
+        overflow-y: auto;
+    }
+
+    &__close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__list {
+        display: grid;
+        place-items: center;
+        gap: 24px;
+    }
+
+    &__link {
+        @include text-16-regular;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
+}

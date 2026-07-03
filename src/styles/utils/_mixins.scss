@@ -1,25 +1,100 @@
+@mixin desktop {
+    @media (max-width: $breakpoint-desktop) {
+        @content;
+    }
+}
+
 @mixin tablet {
-  @media (max-width: $breakpoint-tablet) {
-    @content;
-  }
+    @media (max-width: $breakpoint-tablet) {
+        @content;
+    }
 }
 
 @mixin mobile {
-  @media (max-width: $breakpoint-mobile) {
-    @content;
-  }
+    @media (max-width: $breakpoint-mobile) {
+        @content;
+    }
 }
 
 @mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin abs-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+@mixin bg-gradient {
+    background: linear-gradient(92.14deg, #001A1C 0.52%, #005C4D 91.37%);
+}
+
+@mixin button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-btn-text;
+    background: $color-btn-default;
+    border-radius: 5px;
+
+    &:hover {
+        background: $color-btn-hover;
+    }
+
+    &:active {
+        background: $color-btn-active;
+    }
+}
+
+@mixin text-gradient {
+    background: radial-gradient(circle 220px at right top, #005C4D 9%, #00C0A5 38%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@mixin text-16-regular {
+    font-family: $font-family-base;
+    font-weight: $weight-regular;
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+@mixin text-hero-title {
+    font-family: $font-family-base;
+    font-weight: $weight-bold;
+    font-size: $text-hero-desktop;
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: $color-text-primary;
+
+    @include tablet {
+        font-size: $text-hero-tablet;
+    }
+
+    @include mobile {
+        font-size: $text-hero-mobile;
+    }
+}
+
+@mixin text-hero-subtitle {
+    font-family: $font-family-base;
+    font-weight: $weight-semibold;
+    font-size: $text-md-desktop;
+    line-height: 1;
+    letter-spacing: 0;
+    color: $color-text-primary;
+
+    @include tablet {
+        font-size: $text-lg-tablet;
+    }
+
+    @include mobile {
+        font-size: $text-lg-mobile;
+    }
+}

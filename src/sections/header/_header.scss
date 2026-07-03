@@ -1,0 +1,22 @@
+.header {
+    &__container {
+        max-width: none;
+        margin: 0;
+        padding-left: $container-padding-desktop;
+        padding-right: 45px;
+
+        @include tablet {
+            padding-left: $container-padding-tablet;
+            padding-right: $container-padding-tablet;
+            max-width: $container-max-width;
+            margin: 0 auto;
+        }
+
+        @include mobile {
+            padding-left: $container-padding-mobile;
+            padding-right: $container-padding-mobile;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
