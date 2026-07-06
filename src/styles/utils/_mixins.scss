@@ -164,3 +164,19 @@
 
     }
 }
+
+@mixin text-card-title {
+    font-family: $font-family-base;
+    font-weight: $weight-semibold;
+    font-size: $text-accent-desktop;
+    line-height: 1;
+    letter-spacing: 0;
+    color: $color-text-primary;
+
+    @include tablet {
+        font-size: $text-accent-tablet;
+    }
+    @include mobile {
+        font-size: $text-lg-mobile;
+    }
+}

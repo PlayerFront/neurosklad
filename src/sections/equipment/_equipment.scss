@@ -1,0 +1,188 @@
+.equipment {
+
+    &__container {
+        padding-left: $container-padding-desktop;
+        padding-right: $container-padding-desktop;
+        padding-top: $spacing-section-desktop;
+
+        @include tablet {
+            padding-top: $spacing-section-tablet;
+            padding-left: $container-padding-tablet;
+            padding-right: $container-padding-tablet;
+            margin: 0 auto;
+        }
+
+        @include mobile {
+            padding-top: $spacing-section-mobile;
+            padding-left: $container-padding-mobile;
+            padding-right: $container-padding-mobile;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__heading {
+        @include text-heading;
+        margin-bottom: $spacing-heading-desktop;
+
+        @include tablet {
+            margin-bottom: $spacing-heading-tablet;
+        }
+
+        @include mobile {
+            margin-bottom: $spacing-heading-mobile;
+        }
+    }
+
+    &__variants {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-element-desktop;
+
+        @include tablet {
+            gap: $spacing-element-tablet;
+        }
+    }
+
+    &__intro {
+        @include text-body;
+        width: 100%;
+    }
+
+    &__cards {
+        display: flex;
+        gap: $spacing-block-desktop;
+
+        @include tablet {
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        @include mobile {
+            gap: $spacing-element-mobile;
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        padding: $spacing-block-desktop $spacing-block-desktop 52px $spacing-block-desktop;
+        border: 0.5px solid rgba(192, 191, 191, 0.7);
+        background-color: rgba(192, 191, 191, 0.05);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-radius: 5px;
+        gap: $spacing-element-desktop;
+        flex-direction: column;
+
+        @include tablet {
+            padding: $spacing-block-tablet;
+            gap: $spacing-element-tablet;
+            max-width: 360px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        @include mobile {
+            padding: $spacing-block-mobile $spacing-block-mobile 24px $spacing-block-mobile;
+            gap: $spacing-subheading-mobile;
+        }
+
+        &-title {
+            @include text-card-title;
+            text-align: center;
+
+            span {
+                font-size: $text-small-desktop;
+                font-weight: $weight-regular;
+
+                @include mobile {
+                    font-size: $text-small-mobile;
+                }
+            }
+        }
+
+        &--accent {
+            background: rgba(0, 192, 165, 0.15);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+        }
+
+        &-list {
+            list-style-type: disc;
+            list-style-position: outside;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 30px;
+
+            @include mobile {
+                padding-left: 15px;
+            }
+        }
+
+        &-item {
+            @include text-body;
+        }
+    }
+
+    &__benefits {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-element-desktop;
+        padding-top: $spacing-block-desktop;
+        list-style: none;
+
+        @include tablet {
+            gap: $spacing-subheading-tablet;
+        }
+
+        @include mobile {
+            padding-top: $spacing-block-mobile;
+            gap: $spacing-subheading-mobile;
+        }
+
+        &-title {
+            @include text-block;
+            text-align: center;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__benefit {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+
+        @include tablet {
+            gap: 10px;
+        }
+
+        &-number {
+            @include flex-center;
+            @include text-body;
+            background: rgba(192, 191, 191, 0.1);
+            box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.1),
+                inset -3px -3px 5px rgba(0, 0, 0, 0.1),
+                1px -1px 0 rgba(192, 191, 191, 0.5),
+                -1px 1px 0 rgba(192, 191, 191, 0.5);
+            font-weight: $weight-bold;
+            border-radius: 50%;
+            min-width: 38px;
+            min-height: 38px;
+        }
+
+        &-text {
+            @include text-body;
+        }
+    }
+
+
+}
