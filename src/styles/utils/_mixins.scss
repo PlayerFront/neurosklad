@@ -55,6 +55,18 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+    @include tablet {
+        background: radial-gradient(circle 220px at left bottom, #005C4D 9%, #00C0A5 38%);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    @include mobile {
+        background: radial-gradient(circle 220px at center, #005C4D 9%, #00C0A5 38%);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
 }
 
 @mixin text-16-regular {
@@ -96,5 +108,59 @@
 
     @include mobile {
         font-size: $text-lg-mobile;
+    }
+}
+
+@mixin text-heading {
+    font-family: $font-family-base;
+    font-weight: $weight-semibold;
+    font-size: $text-xl-desktop;
+    line-height: 1;
+    letter-spacing: 0;
+    color: $color-accent;
+
+    @include tablet {
+        font-size: $text-xl-tablet;
+    }
+
+    @include mobile {
+        font-size: $text-xl-mobile;
+    }
+}
+
+@mixin text-body {
+    font-family: $font-family-base;
+    font-weight: $weight-regular;
+    font-size: $text-body-desktop;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: $color-text-primary;
+
+    @include tablet {
+        font-size: $text-body-tablet;
+    }
+
+    @include mobile {
+        font-size: $text-body-mobile;
+    }
+}
+
+@mixin text-block {
+    font-family: $font-family-base;
+    font-weight: $weight-semibold;
+    font-size: $text-lg-desktop;
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: $color-text-primary;
+
+    @include tablet {
+        font-size: $text-lg-tablet;
+        line-height: 1;
+    }
+
+    @include mobile {
+        font-size: $text-lg-mobile;
+        line-height: 1;
+
     }
 }

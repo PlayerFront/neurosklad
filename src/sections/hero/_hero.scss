@@ -1,26 +1,18 @@
 .hero {
-    // overflow: hidden;
 
     &__container {
-        max-width: none;
-        margin: 0;
-        padding-left: $container-padding-desktop;
-        padding-right: 45px;
-        padding-top: 48px;
-        min-height: 500px;
+        padding: 48px 45px 136px $container-padding-desktop;
         position: relative;
+
 
         @include tablet {
             padding-left: $container-padding-tablet;
             padding-right: $container-padding-tablet;
-            max-width: $container-max-width;
             margin: 0 auto;
         }
 
         @include mobile {
-            padding-left: $container-padding-mobile;
-            padding-right: $container-padding-mobile;
-            max-width: 100%;
+            padding: 40px $container-padding-mobile 0 $container-padding-mobile;
             margin: 0 auto;
         }
     }
@@ -28,7 +20,15 @@
     &__content {
         display: flex;
         flex-direction: column;
-        gap: 2.313rem;
+        gap: 37px;
+
+        @include tablet {
+            gap: 43px;
+        }
+
+        @include mobile {
+            gap: 30px;
+        }
     }
 
     &__title {
@@ -43,6 +43,11 @@
     &__subtitle {
         @include text-hero-subtitle;
         width: 100%;
+        height: 41px;
+
+        @include mobile {
+            height: 54px;
+        }
     }
 
 
@@ -73,11 +78,17 @@
         padding: 15px 30px;
         width: 188px;
         height: 52px;
-        position: fixed;
-        bottom: 150px;
+        margin-block-start: 156px;
+        // position:relative;
+        // bottom: 150px;
 
         @include tablet {
-            position: static;
+            // position: static;
+        }
+
+        @include mobile {
+            margin-block-start: 288px;
+
         }
     }
 }
