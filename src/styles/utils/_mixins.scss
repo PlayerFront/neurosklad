@@ -197,3 +197,19 @@
         font-size: $text-stat-number-mobile;
     }
 }
+
+@mixin text-services-card {
+    font-family: $font-family-base;
+    font-weight: $weight-semibold;
+    font-size: $text-lg-desktop;
+    line-height: 1.2;
+    letter-spacing: 0;
+
+    @include tablet {
+        font-size: $text-accent-tablet;
+    }
+
+    @include mobile {
+        font-size: $text-lg-mobile;
+    }
+}

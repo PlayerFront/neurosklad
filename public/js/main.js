@@ -53,6 +53,12 @@ function togglePanel() {
   isOpen ? closePanel() : openPanel();
 }
 
+const panelLinks = document.querySelectorAll('.mobile-panel__link');
+
+panelLinks.forEach(link => {
+  link.addEventListener('click', closePanel);
+});
+
 burger.addEventListener('click', togglePanel);
 overlay.addEventListener('click', togglePanel);
 closeBtn.addEventListener('click', togglePanel);
