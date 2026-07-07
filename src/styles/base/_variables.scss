@@ -57,6 +57,7 @@ $breakpoint-mobile: 767px;
 // SIZES
 // desktop
 $base-font-size: 16px;
+$text-stat-number-desktop: 4rem; // 64px
 $text-hero-desktop: 3.438rem; // 55 px
 $text-xl-desktop: 2.688rem; // 43 px
 $text-lg-desktop: 2.063rem; // 33 px
@@ -66,6 +67,7 @@ $text-body-desktop: 1.25rem; // 20px
 $text-small-desktop: 1rem; // 16px
 
 // tablet
+$text-stat-number-tablet: 3.75rem; // 60px
 $text-hero-tablet: 2.813rem;   // 45px 
 $text-xl-tablet: 1.875rem;   // 30px 
 $text-lg-tablet: 1.563rem;   // 25px 
@@ -76,6 +78,7 @@ $text-small-tablet: 1rem; // 16px
 $text-xs-tablet: 0.875rem; // 14 px
 
 // mobile
+$text-stat-number-mobile: 3rem; // 48px
 $text-hero-mobile: 2rem; // 32px 
 $text-xl-mobile: 1.563rem;// 25px 
 $text-lg-mobile: 1.25rem;  // 20px 

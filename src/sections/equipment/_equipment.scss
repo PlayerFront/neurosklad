@@ -1,6 +1,6 @@
 .equipment {
-
     &__container {
+
         padding-left: $container-padding-desktop;
         padding-right: $container-padding-desktop;
         padding-top: $spacing-section-desktop;
@@ -181,6 +181,186 @@
 
         &-text {
             @include text-body;
+        }
+    }
+
+    &__photo {
+        padding-top: $spacing-block-desktop;
+        gap: $spacing-element-desktop;
+
+        @include mobile {
+            padding-top: $spacing-block-mobile;
+        }
+
+        &-title {
+            @include text-block;
+            text-align: center;
+            margin-block-end: $spacing-element-desktop;
+
+            @include tablet {
+                margin-block-end: $spacing-subheading-tablet;
+            }
+
+            @include mobile {
+                margin-block-end: $spacing-subheading-mobile;
+            }
+        }
+    }
+
+    &__gallery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 1160px;
+
+            @include tablet {
+                text-align: center;
+                word-spacing: 352px;
+            }
+
+            @include mobile {
+                text-align: center;
+                word-spacing: 156px;
+            }
+        }
+
+        .swiper {
+            width: 100%;
+            max-width: 1160px;
+            overflow: visible;
+        }
+
+        .swiper-slide img {
+            border-radius: 5px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        &-btn {
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &--prev {
+                position: absolute;
+                left: -40px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @include tablet {
+                    position: static;
+                    transform: none;
+                    display: inline-block;
+                    margin-block-start: $spacing-subheading-tablet;
+                    margin-right: 30px;
+                }
+
+                @include mobile {
+                    position: static;
+                    transform: none;
+                    display: inline-block;
+                    margin-block-start: $spacing-block-mobile;
+
+                }
+            }
+
+            &--next {
+                position: absolute;
+                right: -40px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @include tablet {
+                    position: static;
+                    transform: none;
+                    display: inline-block;
+                    margin-block-start: $spacing-subheading-tablet;
+                    // margin-inline-start: 352px;
+                }
+
+                @include mobile {
+                    position: static;
+                    transform: none;
+                    display: inline-block;
+                    margin-block-start: $spacing-block-mobile;
+                    // margin-inline-start: 156px;
+                }
+            }
+        }
+    }
+
+    &__stats {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-element-desktop;
+        padding-top: $spacing-block-desktop;
+        list-style: none;
+
+        @include tablet {
+            gap: $spacing-subheading-tablet;
+        }
+
+        @include mobile {
+            padding-top: $spacing-block-mobile;
+            gap: $spacing-subheading-mobile;
+        }
+
+        &-title {
+            @include text-block;
+            text-align: center;
+        }
+
+        &-list {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            row-gap: 19px;
+            list-style: none;
+
+            @include tablet {
+                gap: 20px 34px;
+            }
+
+            @include mobile {
+                grid-template-columns: 1fr;
+                gap: $spacing-element-mobile;
+                 justify-content: center;
+            }
+        }
+    }
+
+    &__stat {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+
+        &:nth-child(3) {
+            grid-column: 1 / -1;
+            justify-self: center;
+        }
+
+        &-text {
+            @include text-body;
+            color: $color-text-primary;
+        }
+
+        &-number {
+            @include text-stat-number;
+            // @include text-gradient;
+            background: radial-gradient(50% 50% at 50% 50%, #00C0A5 23.56%, #005A4D 67.31%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
     }
 

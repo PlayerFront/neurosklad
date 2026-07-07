@@ -127,7 +127,7 @@
         &-list {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px $spacing-block-desktop;
+            gap: 25px $spacing-block-desktop;
 
             @include tablet {
                 grid-template-columns: repeat(2, 1fr);
@@ -165,7 +165,6 @@
 
             @include tablet {
                 grid-column: auto;
-
             }
         }
 

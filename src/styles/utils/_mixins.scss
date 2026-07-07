@@ -176,7 +176,24 @@
     @include tablet {
         font-size: $text-accent-tablet;
     }
+
     @include mobile {
         font-size: $text-lg-mobile;
+    }
+}
+
+@mixin text-stat-number {
+    font-family: $font-family-base;
+    font-weight: $weight-semibold;
+    font-size: $text-stat-number-desktop;
+    line-height: 1;
+    letter-spacing: 0;
+
+    @include tablet {
+        font-size: $text-stat-number-tablet;
+    }
+
+    @include mobile {
+        font-size: $text-stat-number-mobile;
     }
 }
