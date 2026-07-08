@@ -39,8 +39,8 @@
         justify-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        border: 0.5px solid rgba(192, 191, 191, 0.7);
-        background-color: rgba(192, 191, 191, 0.1);
+        border: 0.5px solid rgba(192, 191, 191, 0.2);
+        background-color: $color-badge-default;
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
         padding: 70px 100px;

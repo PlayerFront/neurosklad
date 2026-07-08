@@ -1,25 +1,25 @@
 .equipment {
-    &__container {
+    // &__container {
 
-        padding-left: $container-padding-desktop;
-        padding-right: $container-padding-desktop;
-        padding-top: $spacing-section-desktop;
+    //     padding-left: $container-padding-desktop;
+    //     padding-right: $container-padding-desktop;
+    //     padding-top: $spacing-section-desktop;
 
-        @include tablet {
-            padding-top: $spacing-section-tablet;
-            padding-left: $container-padding-tablet;
-            padding-right: $container-padding-tablet;
-            margin: 0 auto;
-        }
+    //     @include tablet {
+    //         padding-top: $spacing-section-tablet;
+    //         padding-left: $container-padding-tablet;
+    //         padding-right: $container-padding-tablet;
+    //         margin: 0 auto;
+    //     }
 
-        @include mobile {
-            padding-top: $spacing-section-mobile;
-            padding-left: $container-padding-mobile;
-            padding-right: $container-padding-mobile;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-    }
+    //     @include mobile {
+    //         padding-top: $spacing-section-mobile;
+    //         padding-left: $container-padding-mobile;
+    //         padding-right: $container-padding-mobile;
+    //         max-width: 100%;
+    //         margin: 0 auto;
+    //     }
+    // }
 
     &__heading {
         @include text-heading;
@@ -69,7 +69,7 @@
         align-items: center;
         flex: 1;
         padding: $spacing-block-desktop $spacing-block-desktop 52px $spacing-block-desktop;
-        border: 0.5px solid rgba(192, 191, 191, 0.7);
+        border: 0.5px solid rgba(192, 191, 191, 0.2);
         background-color: rgba(192, 191, 191, 0.05);
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
@@ -106,6 +106,7 @@
 
         &--accent {
             background: rgba(0, 192, 165, 0.15);
+            border: 1px solid rgba(0, 192, 165, 0.4);
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
         }

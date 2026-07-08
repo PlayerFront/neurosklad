@@ -1,24 +1,24 @@
 .services {
-    &__container {
-        padding-left: $container-padding-desktop;
-        padding-right: $container-padding-desktop;
-        padding-top: $spacing-section-desktop;
+    // &__container {
+    //     padding-left: $container-padding-desktop;
+    //     padding-right: $container-padding-desktop;
+    //     padding-top: $spacing-section-desktop;
 
-        @include tablet {
-            padding-top: $spacing-section-tablet;
-            padding-left: $container-padding-tablet;
-            padding-right: $container-padding-tablet;
-            margin: 0 auto;
-        }
+    //     @include tablet {
+    //         padding-top: $spacing-section-tablet;
+    //         padding-left: $container-padding-tablet;
+    //         padding-right: $container-padding-tablet;
+    //         margin: 0 auto;
+    //     }
 
-        @include mobile {
-            padding-top: $spacing-section-mobile;
-            padding-left: $container-padding-mobile;
-            padding-right: $container-padding-mobile;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-    }
+    //     @include mobile {
+    //         padding-top: $spacing-section-mobile;
+    //         padding-left: $container-padding-mobile;
+    //         padding-right: $container-padding-mobile;
+    //         max-width: 100%;
+    //         margin: 0 auto;
+    //     }
+    // }
 
     &__heading {
         @include text-heading;

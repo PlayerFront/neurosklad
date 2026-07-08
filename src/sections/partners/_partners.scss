@@ -1,0 +1,125 @@
+.partners {
+    &__heading {
+        @include text-heading;
+        margin-bottom: $spacing-heading-desktop;
+
+        @include tablet {
+            margin-bottom: $spacing-heading-tablet;
+        }
+
+        @include mobile {
+            margin-bottom: $spacing-heading-mobile;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-block-desktop;
+        margin-bottom: $spacing-block-desktop;
+
+        @include tablet {
+            gap: $spacing-element-tablet;
+            margin-bottom: $spacing-subheading-tablet;
+        }
+
+        @include mobile {
+            gap: $spacing-element-mobile;
+            margin-bottom: $spacing-block-mobile;
+        }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: $spacing-element-desktop;
+        padding: 40px;
+        border-radius: 5px;
+        background: $color-badge-default;
+        border: 0.5px solid rgba(192, 191, 191, 0.2);
+        transition: color 0.3s ease;
+
+        &:hover {
+            background: $color-badge-hover;
+        }
+
+        &:active {
+            background: $color-badge-active;
+        }
+
+        @include tablet {
+            gap: $spacing-element-tablet;
+        }
+
+        @include mobile {
+            gap: $spacing-element-mobile;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        &-logo {
+            flex-shrink: 0;
+            width: 94px;
+            min-height: 69px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            @include tablet {
+                gap: 0;
+                min-height: 64px;
+            }
+
+            @include mobile {
+                min-height: 60px;
+            }
+
+            img {
+                width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-info {
+            flex: 1;
+        }
+
+        &-name {
+            font-weight: $weight-semibold;
+            font-size: $text-accent-desktop;
+
+            @include mobile {
+                font-size: $text-lg-mobile;
+            }
+        }
+
+        &-text {
+            @include text-body;
+        }
+    }
+
+    &__cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        @include mobile {
+            gap: $spacing-element-mobile;
+        }
+
+        &-title {
+            @include text-block;
+            text-align: center;
+        }
+
+        &-email {
+            @include text-body;
+            text-align: center;
+        }
+    }
+}
