@@ -52,8 +52,7 @@
         position: relative;
         border-radius: 3.24px;
         overflow: hidden;
-        max-width: 560px;
-        max-height: 340px;
+        aspect-ratio: 560 / 340;
 
         &::after {
             content: '';
@@ -64,13 +63,11 @@
         }
 
         @include tablet {
-            max-width: 370px;
-            max-height: 225px;
+            aspect-ratio: 370 / 225;
         }
 
         @include mobile {
-            max-width: 363px;
-            max-height: 220px;
+            aspect-ratio: 363 / 220;
         }
 
         &-img {

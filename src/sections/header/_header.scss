@@ -2,6 +2,7 @@
     &__container {
         padding-left: $container-padding-desktop;
         padding-right: 45px;
+        padding-top: 0;
 
         @include tablet {
             padding-left: $container-padding-tablet;

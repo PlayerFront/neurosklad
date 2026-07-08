@@ -109,6 +109,7 @@ body {
 .header__container {
   padding-left: 140px;
   padding-right: 45px;
+  padding-top: 0;
 }
 @media (max-width: 1024px) {
   .header__container {
@@ -1219,8 +1220,7 @@ body {
   position: relative;
   border-radius: 3.24px;
   overflow: hidden;
-  max-width: 560px;
-  max-height: 340px;
+  aspect-ratio: 560/340;
 }
 .services__card::after {
   content: "";
@@ -1231,14 +1231,12 @@ body {
 }
 @media (max-width: 1024px) {
   .services__card {
-    max-width: 370px;
-    max-height: 225px;
+    aspect-ratio: 370/225;
   }
 }
 @media (max-width: 767px) {
   .services__card {
-    max-width: 363px;
-    max-height: 220px;
+    aspect-ratio: 363/220;
   }
 }
 .services__card-img {
