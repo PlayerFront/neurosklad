@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00C0A5">
     <title>Нейросклад - оборудование для склада</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -284,7 +285,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="services" id="services" data-aos="fade-up">
+    <section class="services" id="services">
         <div class="container services__container">
             <h2 class="services__heading">Наши услуги</h2>
             <div class="services__grid">
@@ -317,7 +318,8 @@
         <div class="container partners__container">
             <h2 class="partners__heading">Партнеры</h2>
             <div class="partners__list">
-                <a class="partners__card" target="_blank" rel="noopener noreferrer" href="https://ru.mavin.cn/" data-aos="fade-up">
+                <a class="partners__card" target="_blank" rel="noopener noreferrer" href="https://ru.mavin.cn/"
+                    data-aos="fade-up">
                     <div class="partners__card-logo">
                         <img src="img/partners/partners-1.svg" alt="Mavin" loading="lazy">
                         <h2 class="partners__card-name">MAVIN</h2>
@@ -331,7 +333,8 @@
                         </p>
                     </div>
                 </a>
-                <a class="partners__card" target="_blank" rel="noopener noreferrer" href="https://vk.com/longtail_psk?ysclid=mldhz9m3oo190667466" data-aos="fade-up">
+                <a class="partners__card" target="_blank" rel="noopener noreferrer"
+                    href="https://vk.com/longtail_psk?ysclid=mldhz9m3oo190667466" data-aos="fade-up">
                     <div class="partners__card-logo">
                         <img src="img/partners/partners-2.svg" alt="LongTail" loading="lazy">
                         <h2 class="partners__card-name">LongTail</h2>
@@ -345,7 +348,8 @@
                         </p>
                     </div>
                 </a>
-                <a class="partners__card" target="_blank" rel="noopener noreferrer" href="https://stellazhi-irbis.ru/" data-aos="fade-up">
+                <a class="partners__card" target="_blank" rel="noopener noreferrer" href="https://stellazhi-irbis.ru/"
+                    data-aos="fade-up">
                     <div class="partners__card-logo">
                         <img src="img/partners/partners-3.svg" alt="Ирбис" loading="lazy">
                         <h2 class="partners__card-name">Ирбис</h2>
@@ -432,6 +436,16 @@
         </div>
     </div>
 
+    <!-- COOKIE BANNER -->
+    <div class="cookie" id="cookie-banner" aria-hidden="false">
+        <div class="cookie__content">
+            <h3 class="cookie__heading">Мы используем файлы cookie</h3>
+            <p class="cookie__text">Нажав «ОК», вы соглашаетесь на использование
+                всех категорий cookie. В любой момент вы можете изменить выбор в настройках своего браузера.</p>
+                <button class="cookie__btn" id="cookie-accept">ОК</button>
+        </div>
+    </div>
+
     <!-- SCRIPTS -->
     <script src="js/main.js"></script>
     <script src="js/modal.js"></script>
@@ -441,6 +455,9 @@
             duration: 600,
             once: true,
             offset: 50,
+        });
+        window.addEventListener('load', () => {
+            AOS.refresh();
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
