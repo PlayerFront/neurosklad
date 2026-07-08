@@ -1,0 +1,160 @@
+.cases {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-block-desktop;
+
+        @include tablet {
+            gap: $spacing-subheading-tablet;
+        }
+
+        @include mobile {
+            gap: $spacing-block-mobile;
+
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-heading-desktop;
+
+        @include tablet {
+            gap: $spacing-heading-tablet;
+        }
+
+        @include mobile {
+            gap: $spacing-heading-mobile;
+        }
+    }
+
+    &__heading {
+        @include text-heading;
+    }
+
+    &__intro {
+        @include text-body;
+    }
+}
+
+.case {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-element-desktop;
+
+    @include tablet {
+        gap: $spacing-element-tablet;
+    }
+
+    @include mobile {
+        gap: $spacing-subheading-mobile;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-element-desktop;
+
+        @include tablet {
+            gap: $spacing-element-tablet;
+        }
+
+        @include mobile {
+            gap: $spacing-subheading-mobile;
+        }
+    }
+
+    &__title {
+        @include text-block;
+        color: $color-accent;
+    }
+
+    &__intro {
+        @include text-body;
+    }
+
+    &__flow {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        @include tablet {
+            flex-direction: column;
+            gap: $spacing-element-tablet;
+        }
+
+        @include mobile {
+            gap: $spacing-element-mobile;
+        }
+    }
+
+    &__step {
+        align-self: stretch;
+        flex: 1;
+        background: $color-badge-default;
+        border: 0.5px solid rgba(192, 191, 191, 0.2);
+        padding: 40px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-element-desktop;
+
+        @include tablet {
+            align-self: center;
+            width: 100%;
+            max-width: 754px;
+        }
+
+        @include mobile {
+            padding: 20px;
+            gap:$spacing-element-mobile;
+        }
+
+        &-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            @include tablet {
+                gap: 0;
+            }
+        }
+
+        &-icon {
+            min-height: 21px;
+            width: auto;
+        }
+
+        &-text {
+            @include text-body;
+        }
+
+        &-list {
+            list-style: decimal inside;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &-item {
+            @include text-body;
+        }
+    }
+
+    &__arrow {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        flex-shrink: 0;
+          width: 24px;
+  height: 24px;
+
+        @include tablet {
+            img {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

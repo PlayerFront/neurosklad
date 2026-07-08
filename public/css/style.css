@@ -1472,6 +1472,256 @@ body {
   text-align: center;
 }
 
+.cases__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+@media (max-width: 1024px) {
+  .cases__container {
+    gap: 1.875rem;
+  }
+}
+@media (max-width: 767px) {
+  .cases__container {
+    gap: 1.25rem;
+  }
+}
+.cases__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+@media (max-width: 1024px) {
+  .cases__info {
+    gap: 3.125rem;
+  }
+}
+@media (max-width: 767px) {
+  .cases__info {
+    gap: 1.875rem;
+  }
+}
+.cases__heading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.688rem;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #00C0A5;
+}
+@media (max-width: 1024px) {
+  .cases__heading {
+    font-size: 1.875rem;
+  }
+}
+@media (max-width: 767px) {
+  .cases__heading {
+    font-size: 1.563rem;
+  }
+}
+.cases__intro {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #C0BFBF;
+}
+@media (max-width: 1024px) {
+  .cases__intro {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 767px) {
+  .cases__intro {
+    font-size: 1rem;
+  }
+}
+
+.case {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+@media (max-width: 1024px) {
+  .case {
+    gap: 1.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .case {
+    gap: 0.9375rem;
+  }
+}
+.case__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+@media (max-width: 1024px) {
+  .case__info {
+    gap: 1.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .case__info {
+    gap: 0.9375rem;
+  }
+}
+.case__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.063rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #C0BFBF;
+}
+@media (max-width: 1024px) {
+  .case__title {
+    font-size: 1.563rem;
+    line-height: 1;
+  }
+}
+@media (max-width: 767px) {
+  .case__title {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+}
+.case__title {
+  color: #00C0A5;
+}
+.case__intro {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #C0BFBF;
+}
+@media (max-width: 1024px) {
+  .case__intro {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 767px) {
+  .case__intro {
+    font-size: 1rem;
+  }
+}
+.case__flow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+@media (max-width: 1024px) {
+  .case__flow {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .case__flow {
+    gap: 0.625rem;
+  }
+}
+.case__step {
+  align-self: stretch;
+  flex: 1;
+  background: rgba(192, 191, 191, 0.1);
+  border: 0.5px solid rgba(192, 191, 191, 0.2);
+  padding: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+@media (max-width: 1024px) {
+  .case__step {
+    align-self: center;
+    width: 100%;
+    max-width: 754px;
+  }
+}
+@media (max-width: 767px) {
+  .case__step {
+    padding: 20px;
+    gap: 0.625rem;
+  }
+}
+.case__step-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+@media (max-width: 1024px) {
+  .case__step-header {
+    gap: 0;
+  }
+}
+.case__step-icon {
+  min-height: 21px;
+  width: auto;
+}
+.case__step-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #C0BFBF;
+}
+@media (max-width: 1024px) {
+  .case__step-text {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 767px) {
+  .case__step-text {
+    font-size: 1rem;
+  }
+}
+.case__step-list {
+  list-style: decimal inside;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.case__step-item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #C0BFBF;
+}
+@media (max-width: 1024px) {
+  .case__step-item {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 767px) {
+  .case__step-item {
+    font-size: 1rem;
+  }
+}
+.case__arrow {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 1024px) {
+  .case__arrow img {
+    transform: rotate(90deg);
+  }
+}
+
 .modal {
   display: flex;
   justify-content: center;
