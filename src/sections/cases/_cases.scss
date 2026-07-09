@@ -69,13 +69,14 @@
         color: $color-accent;
     }
 
-    &__intro {
+    &__description {
         @include text-body;
     }
 
     &__flow {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 15px;
 
         @include tablet {
@@ -85,6 +86,7 @@
 
         @include mobile {
             gap: $spacing-element-mobile;
+            
         }
     }
 
@@ -107,7 +109,7 @@
 
         @include mobile {
             padding: 20px;
-            gap:$spacing-element-mobile;
+            gap: $spacing-element-mobile;
         }
 
         &-header {
@@ -129,6 +131,7 @@
 
         &-text {
             @include text-body;
+            width: 100%;
         }
 
         &-list {
@@ -148,8 +151,6 @@
         align-items: center;
         justify-self: center;
         flex-shrink: 0;
-          width: 24px;
-  height: 24px;
 
         @include tablet {
             img {
