@@ -78,7 +78,7 @@
 
   function hideBanner() {
     const animation = banner.animate(
-      [{ opacity: 1, transform: 'translateY(0)' }, { opacity: 0, transform: 'translateY(20px)' }],
+      [{ opacity: 1, transform: 'translateX(0)' }, { transform: 'translateX(100%)' }],
       { duration: 300, easing: 'ease', fill: 'forwards' }
     );
 
