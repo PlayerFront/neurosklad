@@ -3,14 +3,17 @@
         display: flex;
         flex-direction: column;
         gap: $spacing-block-desktop;
+        padding-bottom: $spacing-section-desktop;
 
         @include tablet {
             gap: $spacing-subheading-tablet;
+            padding-bottom: $spacing-section-tablet;
+
         }
 
         @include mobile {
             gap: $spacing-block-mobile;
-
+            padding-bottom: $spacing-section-mobile;
         }
     }
 

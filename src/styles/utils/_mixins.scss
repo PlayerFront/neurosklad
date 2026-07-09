@@ -213,3 +213,19 @@
         font-size: $text-lg-mobile;
     }
 }
+
+@mixin text-footer {
+    font-family: $font-family-base;
+    font-weight: $weight-regular;
+    font-size: $text-small-desktop;
+    line-height: 1.2;
+    letter-spacing: 0;
+
+    @include tablet {
+        font-size: $text-xs-tablet;
+    }
+
+    @include mobile {
+        font-size: $text-small-mobile;
+    }
+}
