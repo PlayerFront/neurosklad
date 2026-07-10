@@ -5,7 +5,7 @@
   z-index: 200;
   visibility: hidden;
   pointer-events: none;
-
+  overflow-y: auto;
   &.active {
     visibility: visible;
     pointer-events: auto;

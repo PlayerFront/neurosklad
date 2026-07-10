@@ -1,0 +1,80 @@
+.modal {
+    &__policy-window {
+        position: relative;
+        width: 1107px;
+         max-height: 90vh; 
+        background: $color-form-bg;
+        border-radius: 5px;
+        padding: 40px 150px;
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-heading-desktop;
+        z-index: 222;
+        overflow-y: auto;
+
+        @include tablet {
+            width: 834px;
+            padding: 40px;
+        }
+
+        @include mobile {
+            width: 100%;
+            padding: 20px;
+            gap: $spacing-block-mobile;
+        }
+    }
+
+    &__policy-title {
+        font-size: $text-lg-desktop;
+        line-height: 1.2;
+        letter-spacing: 0;
+        font-weight: $weight-semibold;
+        text-align: center;
+
+        @include tablet {
+            font-size: $text-md-tablet;
+        }
+
+        @include mobile {
+            font-size: $text-lg-mobile;
+            
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+
+        @include mobile {
+            top: 12px;
+            right: 6px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-element-desktop;
+
+        @include mobile {
+            gap: $spacing-subheading-mobile;
+        }
+    }
+
+    &__text {
+        @include text-body;
+        color: $color-text-primary;
+
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &--numeric {
+            list-style: decimal inside;
+        }
+    }
+}
