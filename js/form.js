@@ -5,6 +5,12 @@
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
+      const submitBtn = form.querySelector('.form__submit');
+      const originalText = submitBtn.querySelector('.form__submit-text').textContent;
+
+      submitBtn.classList.add('form__submit--loading');
+      submitBtn.querySelector('.form__submit-text').textContent = 'Отправка...';
+
       const templateParams = {
         name: form.name.value,
         phone: form.phone.value,
@@ -25,6 +31,9 @@
       } catch (err) {
         console.error('Ошибка:', err);
         alert('Ошибка отправки. Попробуйте позже.');
+      } finally {
+        submitBtn.classList.remove('form__submit--loading');
+        submitBtn.querySelector('.form__submit-text').textContent = originalText;
       }
     });
   }
